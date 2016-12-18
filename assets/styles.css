@@ -19,6 +19,12 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+a {
+    font-weight: 800;
+    text-decoration: none;
+}
+
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
 }
@@ -88,7 +94,7 @@ html, body {
   color: inherit;
 }
 .mdl-demo .mdl-card__actions a {
-  color: #00BCD4;
+  /*color: #00BCD4;*/
   margin: 0;
 }
 .mdl-demo .mdl-card__actions a:hover,

@@ -20,21 +20,22 @@
       <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
       <h1 class="mdl-mega-footer--heading">Let's Connect</h1>
       <ul class="mdl-mega-footer--link-list social-media-list">
-        {% if site.github_username %}
-        <li>
-          {% include icon-github.html username=site.github_username %}
-        </li>
-        {% endif %}
-
         {% if site.twitter_username %}
         <li>
           {% include icon-twitter.html username=site.twitter_username %}
         </li>
         {% endif %}
 
+        {% if site.linkedin_username %}
+        <li>
+          {% include icon-linkedin.html username=site.linkedin_username %}
+        </li>
+        {% endif %}
       </ul>
     </div>
     <div class="mdl-mega-footer--drop-down-section">
+      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer--heading">Bio</h1>
       <p>{{ site.description | escape }}</p>
     </div>
 
@@ -44,7 +45,7 @@
       More Information
     </div>
     <ul class="mdl-mega-footer--link-list">
-      <li><a href="#">{{ site.title | escape }}</a></li>
+      <li><a href="https://www.relay.fm/material">Material Podcast</a></li>
       <li><a href="#">Privacy and Terms</a></li>
     </ul>
   </div>
