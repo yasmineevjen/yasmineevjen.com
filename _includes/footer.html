@@ -2,41 +2,21 @@
   <div class="mdl-mega-footer--middle-section">
     <div class="mdl-mega-footer--drop-down-section">
       <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer--heading">Features</h1>
-      <ul class="mdl-mega-footer--link-list">
-        <li>
-          {% if site.author %}
-            {{ site.author | escape }}
-          {% else %}
-            {{ site.title | escape }}
-          {% endif %}
-          </li>
-          {% if site.email %}
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          {% endif %}
-      </ul>
-    </div>
-    <div class="mdl-mega-footer--drop-down-section">
-      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
       <h1 class="mdl-mega-footer--heading">Let's Connect</h1>
       <ul class="mdl-mega-footer--link-list social-media-list">
-        {% if site.twitter_username %}
         <li>
-          {% include icon-twitter.html username=site.twitter_username %}
+          <button class="mdl-button mdl-js-button mdl-button--accent">
+            <i class="material-icons">message</i>&nbsp; Send me a message
+          </button>
         </li>
-        {% endif %}
-
-        {% if site.linkedin_username %}
-        <li>
-          {% include icon-linkedin.html username=site.linkedin_username %}
-        </li>
-        {% endif %}
       </ul>
     </div>
     <div class="mdl-mega-footer--drop-down-section">
       <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer--heading">Bio</h1>
-      <p>{{ site.description | escape }}</p>
+      <h1 class="mdl-mega-footer--heading">Speaker Bio</h1>
+      <ul class="mdl-mega-footer--link-list">
+        <li>{{ site.description | escape }}</li>
+      </ul>
     </div>
 
   </div>
@@ -45,8 +25,18 @@
       More Information
     </div>
     <ul class="mdl-mega-footer--link-list">
-      <li><a href="https://www.relay.fm/material">Material Podcast</a></li>
-      <li><a href="#">Privacy and Terms</a></li>
+      <li><a href="https://www.relay.fm/material"><i class="fa fa-podcast" aria-hidden="true"></i></a></li>
+      <li><a href="http://hiyasmine.com/"> <i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+      <li>
+        {% if site.twitter_username %}
+        {% include icon-twitter.html username=site.twitter_username %}
+        {% endif %}
+      </li>
+      <li>
+        {% if site.linkedin_username %}
+        {% include icon-linkedin.html username=site.linkedin_username %}
+        {% endif %}
+      </li>
     </ul>
   </div>
 </footer>
