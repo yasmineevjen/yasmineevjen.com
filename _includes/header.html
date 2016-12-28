@@ -1,22 +1,13 @@
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-    </div>
-    <div class="mdl-layout__header-row">
+  <header class="mdl-layout__header mdl-color--primary">
 
-      <h3><a  href="{{ "/" | relative_url}}">{{ site.title | escape }}</a></h3>
+    <div class="mdl-layout__header-row">
+      <h4><a style="font-weight: 500;" class="accent-color"  href="{{ "/" | relative_url}}">{{ site.title | escape }}</a></h4>
     </div>
-    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-    </div>
+
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
       <a href="#overview" class="mdl-layout__tab is-active">About</a>
-      <a href="#features" class="mdl-layout__tab">Features</a>
-      <a href="#features" class="mdl-layout__tab">Details</a>
-      {% for my_page in site.pages %}
-        {% if my_page.title %}
-        <a class="mdl-layout__tab" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-        {% endif %}
-      {% endfor %}
+      <a href="#features" class="mdl-layout__tab">Work</a>
       <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
 
         <i class="material-icons">message</i>
@@ -26,8 +17,5 @@
       <a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent typeform-share link" id="add" href="https://yasmine41.typeform.com/to/dOM41M" data-mode="1" target="_blank"><i class="material-icons">message</i>
       <span class="visuallyhidden">Send a Message</span></a>
       <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-
-
-
     </div>
   </header>
