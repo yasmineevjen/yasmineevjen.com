@@ -14,7 +14,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Yasmine Evjen
-email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Yasmine Evjen is a UX Designer and Product Storyteller based in Phoenix, Arizona. She can be found advocating for diversity in tech, using code and design to solve problems, and explaining to her daughter that Google isn't a real person. Hooked on mobile; you can hear her talk about it on Material Podcast, a weekly show about Google and Android on Relay FM. She was once retweeted by First Lady Michelle Obama.
 baseurl: "" # the subpath of your site, e.g. /blog

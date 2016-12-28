@@ -2,11 +2,8 @@
   <div class="mdl-mega-footer--middle-section">
     <div class="mdl-mega-footer--drop-down-section">
       <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-      <h1 class="mdl-mega-footer--heading">Let's Connect</h1>
+      <h1 class="mdl-mega-footer--heading">Let's build wonderful things together.</h1>
       <ul class="mdl-mega-footer--link-list social-media-list">
-        <li>
-          Let's build wonderful things together.
-        </li>
         <li>
           <button class="mdl-button mdl-js-button mdl-button--accent">
             <a class="typeform-share link" href="https://yasmine41.typeform.com/to/dOM41M" data-mode="1" target="_blank"><i class="material-icons">message</i>&nbsp; Send me a message</a>
@@ -39,18 +36,32 @@
       More Information
     </div>
     <ul class="mdl-mega-footer--link-list">
-      <li><a href="https://www.relay.fm/material"><i class="fa fa-podcast" aria-hidden="true"></i></a></li>
-      <li><a href="http://hiyasmine.com/"> <i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
-      <li>
-        {% if site.twitter_username %}
-        {% include icon-twitter.html username=site.twitter_username %}
-        {% endif %}
-      </li>
-      <li>
-        {% if site.linkedin_username %}
-        {% include icon-linkedin.html username=site.linkedin_username %}
-        {% endif %}
-      </li>
+      <!-- Simple Tooltip -->
+
+
+      <li id="tt1"><a href="https://www.relay.fm/material"><i class="fa fa-podcast" aria-hidden="true"></i></a></li>
+      <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" data-mdl-for="tt1">
+      Listen to Material Podcast
+      </div>
+
+      <li id="tt2"><a href="http://hiyasmine.com/"> <i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+      <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" data-mdl-for="tt2">
+      Read my blog
+      </div>
+
+      <li id="tt3">
+        <a href="https://twitter.com/YasmineEvjen"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" data-mdl-for="tt3">
+      Follow me on Twitter
+      </div>
+
+
+      <li id="tt4">
+        <a href="https://www.linkedin.com/in/YasmineEvjen"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" data-mdl-for="tt4">
+      Connect on LinkedIn
+      </div>
+
     </ul>
   </div>
 </footer>
