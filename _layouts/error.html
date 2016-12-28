@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+<style>
+body {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+}
+</style>
+
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <header class="post-header">
+      <h1 class="post-title">{{ page.title | escape }}</h1>
+    </header>
+
+    <div>
+      {{ content }}
+    </div>
+
+
+</body>
+
+</html>
