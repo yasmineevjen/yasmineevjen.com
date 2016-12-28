@@ -1,46 +1,72 @@
-<footer class="site-footer">
+<footer class="mdl-mega-footer">
+  <div class="mdl-mega-footer--middle-section">
+    <div class="mdl-mega-footer--drop-down-section">
+      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer--heading">Let's build wonderful things together.</h1>
+      <ul class="mdl-mega-footer--link-list social-media-list">
+        <li>
+          <button class="mdl-button mdl-js-button mdl-button--accent">
+            <a class="typeform-share link" href="https://yasmine41.typeform.com/to/dOM41M" data-mode="1" target="_blank"><i class="material-icons">message</i>&nbsp; Send me a message</a>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
 
-  <div class="wrapper">
+          </button>
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
-      </div>
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
+        </li>
+      </ul>
+    </div>
+    <div class="mdl-mega-footer--drop-down-section">
+      <input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
+      <h1 class="mdl-mega-footer--heading">Speaker Bio</h1>
+      <ul class="mdl-mega-footer--link-list">
+        <li>{{ site.description | escape }}</li>
+      </ul>
     </div>
 
-  </div>
+    <div class="mdl-mega-footer--drop-down-section" style="text-align: center;">
+      <h1 class="mdl-mega-footer--heading"> </h1>
+      <img style="width: 50%;" src="assets/yas-do.png">
+    </div>
 
+
+  </div>
+  <div class="mdl-mega-footer--bottom-section">
+    <div class="mdl-logo">
+      More Information
+    </div>
+    <ul class="mdl-mega-footer--link-list">
+      <!-- Simple Tooltip -->
+
+
+      <li id="tt1"><a href="https://www.relay.fm/material"><i class="fa fa-podcast" aria-hidden="true"></i></a></li>
+      <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" data-mdl-for="tt1">
+      Listen to Material Podcast
+      </div>
+
+      <li id="tt2"><a href="http://hiyasmine.com/"> <i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+      <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" data-mdl-for="tt2">
+      Read my blog
+      </div>
+
+      <li id="tt3">
+        <a href="https://twitter.com/YasmineEvjen"> <i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" data-mdl-for="tt3">
+      Follow me on Twitter
+      </div>
+
+
+      <li id="tt4">
+        <a href="https://www.linkedin.com/in/YasmineEvjen"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      <div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" data-mdl-for="tt4">
+      Connect on LinkedIn
+      </div>
+
+    </ul>
+  </div>
 </footer>
+</main>
+</div>
+
+<script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
