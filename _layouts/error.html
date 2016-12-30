@@ -3,23 +3,26 @@
 
 {% include head.html %}
 <style>
-body {
-  text-align: center;
+.error-404 {
+  margin: auto;
+  max-width: 65%;
+  padding-top: 24px;
 }
 img {
   max-width: 100%;
 }
+
+.material-icons {
+  vertical-align: middle;
+  font-weight: bold;
+}
 </style>
 
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-  <header class="post-header">
-    <h4 class="post-title">{{ page.title | escape }}</h4>
-  </header>
 
-  <div>
+  <div class="error-404">
     {{ content }}
   </div>
-
 
 </body>
 
