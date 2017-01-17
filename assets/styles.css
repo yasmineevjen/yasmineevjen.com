@@ -84,7 +84,25 @@ a:hover {
   height: 4px;
 }
 
+.mdl-layout__tab.is-active::after {
+  height: 2px;
+  width: 100%;
+  display: block;
+  content: " ";
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background: rgb(255,215,64);
+  -webkit-animation: border-expand .2s cubic-bezier(.4,0,.4,1).01s alternate forwards;
+  animation: border-expand .2s cubic-bezier(.4,0,.4,1).01s alternate forwards;
+  transition: all 1s cubic-bezier(.4,0,1,1);
+}
+
 .mdl-layout.is-upgraded .mdl-layout__tab.is-active {
+  color: rgba(255,255,255, 1);
+}
+
+.mdl-layout__tab.is-active {
   color: rgba(255,255,255, 1);
 }
 
@@ -93,7 +111,7 @@ a:hover {
 }
 
 .mdl-demo main > .mdl-layout__tab-panel {
-  padding: 8px;
+  padding: 16px;
   padding-top: 48px;
 }
 .mdl-demo .mdl-card {
