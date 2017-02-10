@@ -2,7 +2,7 @@
   <header class="mdl-layout__header mdl-color--primary">
 
     <div class="mdl-layout__header-row">
-      <h4><a style="font-weight: 500;" class="accent-color"  href="{{ "/" | relative_url}}">{{ site.title | escape }}</a></h4>
+      <h4 style="font-size: 20px; font-weight: 500; margin: 0;"><a class="accent-color"  href="{{ "/" | relative_url}}">{{ site.title | escape }}</a></h4>
     </div>
 
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
@@ -19,15 +19,20 @@
       <a href="/work" class="mdl-layout__tab">Work</a>
       {% endif %}
 
-      {% if page.active == "contact" %}
-      <a href="/contact" class="mdl-layout__tab mdl-cell--hide-desktop is-active">Contact</a>
-      {% else %}
-      <a href="/contact" class="mdl-layout__tab mdl-cell--hide-desktop">Contact</a>
-      {% endif %}
-
-      <a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent typeform-share link" id="add" href="https://yasmine41.typeform.com/to/dOM41M" data-mode="1" target="_blank"><i class="material-icons">message</i>
+    </div>
+    <!--you are FABulous-->
+    <!--FAB - Large Screens-->
+    <a href="https://yasmine41.typeform.com/to/dOM41M" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent mdl-cell--hide-phone typeform-share link" id="fab-lrg" data-mode="1" target="_blank"><i class="material-icons">message</i>
+      <span class="visuallyhidden">Send a Message</span>
+    </a>
+    <!--FAB - Phone-->
+    {% if page.active == "contact" %}
+      <!--Don't display FAB on Contact Page-->
+    {% else %}
+      <a href="/contact" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent mdl-cell--hide-tablet mdl-cell--hide-desktop" id="fab-sml"><i class="material-icons">message</i>
         <span class="visuallyhidden">Send a Message</span>
       </a>
-    </div>
+    {% endif %}
+    <!--No one reads comments, right?-->
   </header>
   <main class="mdl-layout__content">
