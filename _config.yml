@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Yasmine Evjen
 description: > # this means to ignore newlines until "baseurl:"
-  Yasmine Evjen is a Design Advocate at Google; proponent of pen before pixel and product storytelling. Prior to joining Google she was a UX designer, and host of Material Podcast. Highlighted on Android Experts as "the person behind one of Android’s most powerful voices." She was once retweeted by former First Lady Michelle Obama.
+  Yasmine Evjen is a Design Advocate at Google; helping other designers create human-centered experiences on Google’s platforms. Proponent of pen before pixel, she uses the Google Design Sprint methodology to help teams co-create, test, and build successful products. Prior to Google, she led user experience design efforts to build cross-platform products for start-ups, non-profits, and large corporations. Highlighted on Computer World’s Android Experts as “the person behind one of Android’s most powerful voices,” Yasmine bridges the gap between design and technology to bring stories to life.
 url: "http://yasmineevjen.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: YasmineEvjen
 github_username:  YasmineEvjen
