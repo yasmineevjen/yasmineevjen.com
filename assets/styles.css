@@ -124,8 +124,7 @@ a:hover {
 }
 
 .mdl-demo main > .mdl-layout__tab-panel {
-  padding: 16px;
-  padding-top: 48px;
+  padding: 48px 16px;
 }
 .mdl-demo .mdl-card {
   height: auto;
