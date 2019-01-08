@@ -13,6 +13,10 @@ $mdc-typography-styles-headline2: (
   font-family: unquote("'Questrial', sans-serif;")
 );
 
+$mdc-typography-styles-headline3: (
+  font-family: unquote("'Major Mono Display', monospace"),
+);
+
 $mdc-typography-styles-body1: (
   font-family: unquote("'Questrial', sans-serif;"),
   font-size: 1.25rem,
@@ -50,7 +54,7 @@ background: linear-gradient(180deg, rgba(248,200,160,1) 25%, rgba(240,160,168,1)
 .container {
   max-width: 720px;
   margin: auto;
-  padding: 0 16px;
+  padding: 0 16px 32px;
 }
 
 // .mdc-typography--headline1 {
@@ -65,19 +69,37 @@ background: linear-gradient(180deg, rgba(248,200,160,1) 25%, rgba(240,160,168,1)
 
 .mdc-typography--headline1 {
   font-variant-caps: all-small-caps;
-  margin: 0px;
+  margin-top: 56px;
 }
+
 @media (min-width:150px) {
   .mdc-typography--headline1 {
     font-size: 5rem;
-    line-height: 5rem;
+    line-height: 4rem;
   }
-@media (min-width:500px) {
-  .mdc-typography--headline1 {
-    font-size: 8rem;
-    line-height: 8rem;
+  .mdc-typography--headline2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .mdc-typography--headline3 {
+    font-size: 2rem;
+    line-height: 2rem;
   }
 }
+
+@media (min-width:575px) {
+  .mdc-typography--headline1 {
+    font-size: 8rem;
+    line-height: 6rem;
+  }
+  .mdc-typography--headline2 {
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+  }
+  .mdc-typography--headline3 {
+  font-size: 3rem;
+  line-height: 3.125rem;
+  }
 }
 
 
@@ -88,8 +110,27 @@ background: linear-gradient(180deg, rgba(248,200,160,1) 25%, rgba(240,160,168,1)
 a {
   color: #f55356;
   font-weight: bold;
+  text-decoration: none;
 }
 
 a.typeform-share {
   text-decoration: none;
+}
+
+.foo-button {
+  margin: 24px auto;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	//padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
