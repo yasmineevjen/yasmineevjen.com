@@ -1,0 +1,40 @@
+{
+  "short_name": "Yasmine Evjen",
+  "name": "Yasmine Evjen, Google Design Advocate",
+  "description": "Helping designers create human-centered experiences across Google’s platforms. Host of Centered, exploring the intersection of design, product, and people around the world.",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.com/0bb1b831-2f1f-406a-bb45-91be8fc1ffdd%2Ffavicon.ico?1546716710717",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.com/0bb1b831-2f1f-406a-bb45-91be8fc1ffdd%2Ficon-72x72.png?1546717455469",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.com/0bb1b831-2f1f-406a-bb45-91be8fc1ffdd%2Ficon-96x96.png?1546717455606",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.com/0bb1b831-2f1f-406a-bb45-91be8fc1ffdd%2Ficon-144x144.png?1546717455920",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.com/0bb1b831-2f1f-406a-bb45-91be8fc1ffdd%2Ficon-192x192.png?1546717456288",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn.glitch.com/0bb1b831-2f1f-406a-bb45-91be8fc1ffdd%2Ficon-512x512.png?1546717457067",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#f8c8a0",
+  "display": "standalone",
+  "theme_color": "#f8c8a0"
+}
