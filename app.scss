@@ -1,9 +1,8 @@
 // Material Theming
-//$mdc-theme-primary: #880e4f;
 $mdc-theme-primary: #182870;
 $mdc-theme-on-primary: #f55356;
 
-//$mdc-typography-font-family: unquote('Fredoka One', cursive);
+$mdc-typography-font-family: unquote("'Questrial', sans-serif;");
 
 $mdc-typography-styles-headline1: (
   font-family: unquote("'Major Mono Display', monospace"),
@@ -18,36 +17,18 @@ $mdc-typography-styles-headline3: (
 );
 
 $mdc-typography-styles-body1: (
-  font-family: unquote("'Questrial', sans-serif;"),
   font-size: 1.25rem,
   line-height: 2rem,
 );
-// $mdc-typography-styles-button: (
-//  font-size: 14px,
-//  font-weight: bold,
-// );
-// $mdc-typography-styles-headline6: (
-//  font-size: 20px,
-// );
-// $mdc-shape-small-component-radius: 16px;
-
-// Define theme variables before importing any MDC Web component styles
-// $mdc-theme-primary: midnightblue;
 
 // Import the styles for each MDC Web component
 @import "@material/typography/mdc-typography";
 @import "@material/button/mdc-button";
 
-// Check out the MDC Web documentation for how to use MDC Sass mixins:
-// https://github.com/material-components/material-components-web
-// .foo-button {
-//   @include mdc-button-ink-color(lightblue);
-//   @include mdc-states(lightblue);
-// }
 
 body {
-background: rgb(248,200,160);
-background: linear-gradient(180deg, rgba(248,200,160,1) 25%, rgba(240,160,168,1) 100%);
+  background: rgb(248,200,160);
+  background: linear-gradient(180deg, rgba(248,200,160,1) 25%, rgba(240,160,168,1) 100%);
   color: #182870;
 }
 
@@ -57,54 +38,53 @@ background: linear-gradient(180deg, rgba(248,200,160,1) 25%, rgba(240,160,168,1)
   padding: 0 16px 32px;
 }
 
-// .mdc-typography--headline1 {
-  
-// }
-
-// @media screen and (min-width: 300px) {
-//   .mdc-typography--headline1  {
-//     font-size: 2rem;
-//   }
-// }
-
-.mdc-typography--headline1 {
+h1 {
+  @include mdc-typography(headline1);
   font-variant-caps: all-small-caps;
   margin-top: 56px;
 }
 
+h2 {
+  @include mdc-typography(headline2);
+  color: #00aa9a;
+}
+
+h3 {
+  @include mdc-typography(headline3);
+}
+
+p {
+  @include mdc-typography(body1);
+}
+
 @media (min-width:150px) {
-  .mdc-typography--headline1 {
+  h1 {
     font-size: 5rem;
     line-height: 4rem;
   }
-  .mdc-typography--headline2 {
+  h2 {
     font-size: 2.5rem;
     line-height: 2.5rem;
   }
-  .mdc-typography--headline3 {
+  h3 {
     font-size: 2rem;
     line-height: 2rem;
   }
 }
 
 @media (min-width:575px) {
-  .mdc-typography--headline1 {
+  h1 {
     font-size: 8rem;
     line-height: 6rem;
   }
-  .mdc-typography--headline2 {
+  h2 {
     font-size: 3.75rem;
     line-height: 3.75rem;
   }
-  .mdc-typography--headline3 {
+  h3 {
   font-size: 3rem;
   line-height: 3.125rem;
   }
-}
-
-
-.mdc-typography--headline2 {
-  color: #00aa9a;
 }
 
 a {
@@ -118,6 +98,7 @@ a.typeform-share {
 }
 
 .foo-button {
+  font-weight: bold;
   margin: 24px auto;
 }
 
